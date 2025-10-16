@@ -1,7 +1,7 @@
 import numpy as np
  
 notsorted = True
-arr = np.random.rand(np.random.randint(25))
+arr = np.random.rand(5)
 
 def is_sorted(arr):
     n = len(arr)
@@ -26,6 +26,6 @@ while notsorted:
     if is_sorted(arr) == True:
         notsorted = False
     else:
-        arr = ogarr
+        arr = ogarr.copy()
         
     
